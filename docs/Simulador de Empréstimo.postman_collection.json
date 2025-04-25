@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "4a4c0a1f-1978-4027-9146-53843cc5182e",
+		"name": "Simulador de Empréstimo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44440281",
+		"_collection_link": "https://giansouza.postman.co/workspace/b298c5f5-fba2-4ed5-83aa-dca875194064/collection/44440281-4a4c0a1f-1978-4027-9146-53843cc5182e?action=share&source=collection_link&creator=44440281"
+	},
+	"item": [
+		{
+			"name": "Listar instituições",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/instituicoes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"instituicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar convênios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/convenios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"convenios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor_emprestimo\": 10000,\r\n    \"instituicoes\": [\"PAN\", \"BMG\", \"OLE\"],\r\n    \"convenios\": [\"INSS\", \"FEDERAL\", \"SIAPE\"],\r\n    \"parcela\": 72\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/simular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"simular"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
