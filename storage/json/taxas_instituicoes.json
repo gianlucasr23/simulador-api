@@ -1,0 +1,10 @@
+{
+    "BMG": {
+      "INSS": {"coeficiente": 0.05, "parcelas": [12, 24]},
+      "FEDERAL": {"coeficiente": 0.06, "parcelas": [12, 36]}
+    },
+    "PAN": {
+      "PRIVADO": {"coeficiente": 0.07, "parcelas": [12, 48]}
+    }
+  }
+  
